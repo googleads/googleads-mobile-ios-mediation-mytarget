@@ -18,26 +18,34 @@ import PackageDescription
 
 let package = Package(
   name: "MyTargetAdapter",
-  platforms: [.iOS(.v12.4)],
+  platforms: [.iOS("12.4")],
   products: [
     .library(
       name: "MyTargetAdapterTarget",
       targets: ["MyTargetAdapterTarget"]
     )
   ],
+  dependencies: [
+    .package(
+      name: "MyTargetSDK",
+      url: "https://github.com/myTargetSDK/mytarget-ios-spm.git",
+      from: "5.35.0"
+    )
+  ],
   targets: [
     .target(
       name: "MyTargetAdapterTarget",
       dependencies: [
-        .target(name: "Adapter"),
+        .target(name: "MyTargetAdapter"),
+        .product(name: "MyTargetSDK", package: "MyTargetSDK"),
       ],
       path: "MyTargetAdapterTarget"
     ),
     .binaryTarget(
-      name: "Adapter",
+      name: "MyTargetAdapter",
       url:
-        "https://dl.google.com/googleadmobadssdk/mediation/ios/mytarget/MyTargetAdapter-5.33.0.0.zip",
-      checksum: ""
+        "https://dl.google.com/googleadmobadssdk/mediation/ios/mytarget/MyTargetAdapter-5.35.0.0.zip",
+      checksum: "13d4291deb902a800ae23dcd422daaeacc0e70de48766c7cffd86ca90dbb9465"
     ),
   ]
 )
