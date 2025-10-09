@@ -29,7 +29,7 @@ let package = Package(
     .package(
       name: "MyTargetSDK",
       url: "https://github.com/myTargetSDK/mytarget-ios-spm.git",
-      from: "5.35.0"
+      exact: "5.36.0"
     )
   ],
   targets: [
@@ -44,8 +44,8 @@ let package = Package(
     .binaryTarget(
       name: "MyTargetAdapter",
       url:
-        "https://dl.google.com/googleadmobadssdk/mediation/ios/mytarget/MyTargetAdapter-5.35.0.0.zip",
-      checksum: "13d4291deb902a800ae23dcd422daaeacc0e70de48766c7cffd86ca90dbb9465"
+        "https://dl.google.com/googleadmobadssdk/mediation/ios/mytarget/MyTargetAdapter-5.36.0.0.zip",
+      checksum: "9fe34c72272f6e3f0523f420e31b302f1f556b6f402b3558a81170e8bd38792f"
     ),
   ]
 )
