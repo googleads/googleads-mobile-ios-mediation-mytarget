@@ -1,4 +1,4 @@
-// swift-tools-version:5.3
+// swift-tools-version:5.6
 
 // Copyright 2025 Google LLC.
 //
@@ -27,7 +27,6 @@ let package = Package(
   ],
   dependencies: [
     .package(
-      name: "MyTargetSDK",
       url: "https://github.com/myTargetSDK/mytarget-ios-spm.git",
       exact: "5.36.0"
     )
@@ -37,7 +36,7 @@ let package = Package(
       name: "MyTargetAdapterTarget",
       dependencies: [
         .target(name: "MyTargetAdapter"),
-        .product(name: "MyTargetSDK", package: "MyTargetSDK"),
+        .product(name: "MyTargetSDK", package: "mytarget-ios-spm"),
       ],
       path: "MyTargetAdapterTarget"
     ),
