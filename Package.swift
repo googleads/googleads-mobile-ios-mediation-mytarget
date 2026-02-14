@@ -29,7 +29,11 @@ let package = Package(
     .package(
       url: "https://github.com/myTargetSDK/mytarget-ios-spm.git",
       exact: "5.36.0"
-    )
+    ),
+    .package(
+      url: "https://github.com/googleads/swift-package-manager-google-mobile-ads.git",
+      from: "12.0.0"
+    ),
   ],
   targets: [
     .target(
@@ -37,6 +41,7 @@ let package = Package(
       dependencies: [
         .target(name: "MyTargetAdapter"),
         .product(name: "MyTargetSDK", package: "mytarget-ios-spm"),
+        .product(name: "GoogleMobileAds", package: "swift-package-manager-google-mobile-ads"),
       ],
       path: "MyTargetAdapterTarget"
     ),
