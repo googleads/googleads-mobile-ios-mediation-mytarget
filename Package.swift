@@ -48,7 +48,7 @@ let package = Package(
     .binaryTarget(
       name: "MyTargetAdapter",
       url: "https://dl.google.com/googleadmobadssdk/mediation/ios/mytarget/MyTargetAdapter-5.40.0.0.zip",
-      checksum: "66a22abcfdf0d60ec67ae2e364029e69887ffe3d04770339d337e9ab19b7c96d"
+      checksum: "51e3b7e810cbf7eba3fdcb36053e30052684e40d34ae7113c075c835a4b82da2"
     ),
   ]
 )
