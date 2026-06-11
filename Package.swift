@@ -49,7 +49,7 @@ let package = Package(
       name: "MyTargetAdapter",
       url:
         "https://dl.google.com/googleadmobadssdk/mediation/ios/mytarget/MyTargetAdapter-5.44.0.0.zip",
-      checksum: "4edb824a2bb0f5c4012da80399a0d8328c6f1e70f8ff9bb36022e857a488bd51"
+      checksum: "f973c5ac06a6218ef0b9267f0c727e53cefa0966f9d0ccf56ca3e8b7a096c8c1"
     ),
   ]
 )
