@@ -28,7 +28,7 @@ let package = Package(
   dependencies: [
     .package(
       url: "https://github.com/myTargetSDK/mytarget-ios-spm.git",
-      exact: "5.46.0"
+      exact: "5.47.0"
     ),
     .package(
       url: "https://github.com/googleads/swift-package-manager-google-mobile-ads.git",
@@ -48,7 +48,7 @@ let package = Package(
     .binaryTarget(
       name: "MyTargetAdapter",
       url:
-        "https://dl.google.com/googleadmobadssdk/mediation/ios/mytarget/MyTargetAdapter-5.46.0.0.zip",
+        "https://dl.google.com/googleadmobadssdk/mediation/ios/mytarget/MyTargetAdapter-5.47.0.0.zip",
       checksum: "8092ae78364e9c42757efd0d73fee07a3d13f8b1b1b2d0d505757534021ba373"
     ),
   ]
